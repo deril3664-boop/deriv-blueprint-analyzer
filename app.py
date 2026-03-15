@@ -16,7 +16,7 @@ import time
 from datetime import datetime
 from collections import deque, Counter
 import pandas as pd
-No import needed for native charts!
+#No import needed for native charts!
 
 
 # Handle Deriv API import with fallback
