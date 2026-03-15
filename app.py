@@ -16,7 +16,9 @@ import time
 from datetime import datetime
 from collections import deque, Counter
 import pandas as pd
-import plotly.graph_objects as go
+# No import needed for built-in charts!
+# Just use st.line_chart() later in your code.
+
 
 # Handle Deriv API import with fallback
 try:
