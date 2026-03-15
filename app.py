@@ -16,8 +16,7 @@ import time
 from datetime import datetime
 from collections import deque, Counter
 import pandas as pd
-# No import needed for built-in charts!
-# Just use st.line_chart() later in your code.
+No import needed for native charts!
 
 
 # Handle Deriv API import with fallback
@@ -375,7 +374,8 @@ with chart_col:
             yaxis=dict(gridcolor='#1e293b', side='right')
         )
         
-        st.plotly_chart(fig, use_container_width=True)
+        st.line_chart(df.set_index('time')['price'])
+        
     else:
         st.info("⏳ Waiting for market data stream...")
 
